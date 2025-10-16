@@ -79,11 +79,11 @@ WSGI_APPLICATION = 'Resepi_app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': '',
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': '',
-        'PORT': '',
+        'NAME': 'recipe_db',
+        'USER': 'admin',
+        'PASSWORD': 'Admin12345',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
 }
 }
 

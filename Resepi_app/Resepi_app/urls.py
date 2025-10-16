@@ -19,5 +19,6 @@ from django.urls import path,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('recipes.urls')), # recipe app end points
+    path('api/recipes/', include('recipes.urls')),
+    path('api/users/' , include ('users.urls')) # recipe app end points
 ]
