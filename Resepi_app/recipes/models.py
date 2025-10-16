@@ -24,3 +24,6 @@ class Recipe (models.Model):
     categories =models.ManyToManyField(Category, related_name="recipes")
     ingredients =models.ManyToManyField(Ingredient, related_name="recipes")
     created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.title
